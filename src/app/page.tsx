@@ -57,7 +57,7 @@ import { Separator } from "@/components/ui/separator"
 const formSchema = z.object({
   namaKegiatan: z.string().min(3, { message: "Nama kegiatan minimal 3 karakter." }),
   penceramah: z.string().min(3, { message: "Nama penceramah minimal 3 karakter." }),
-  tanggal: z.date({ required_error: "Tanggal harus diisi." }),
+  tanggal: z.date({ message: "Tanggal harus diisi." }),
   waktu: z.string().nonempty({ message: "Waktu harus diisi." }),
 })
 
